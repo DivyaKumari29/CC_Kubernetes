@@ -241,5 +241,3 @@ Twenty-four questions with model answers are given in [docs/05-viva-questions.md
 ---
 
 *This repository was prepared for educational purposes as part of a cloud computing laboratory course. Licensed under the [MIT License](LICENSE).*
-#   C C _ K u b e r n e t e s  
- 
