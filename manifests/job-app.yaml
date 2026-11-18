@@ -1,0 +1,16 @@
+# Experiment 1: one-time batch task that must succeed 3 times.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: report-job
+spec:
+  completions: 3        # total successful pod runs required
+  parallelism: 1        # run one pod at a time
+  backoffLimit: 4       # retry limit before the Job is marked Failed
+  template:
+    spec:
+      containers:
+      - name: report
+        image: batch-app:1.0
+        imagePullPolicy: IfNotPresent   # use the image loaded into minikube
+      restartPolicy: Never              # Jobs allow only Never or OnFailure

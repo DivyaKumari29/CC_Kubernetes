@@ -1,0 +1,10 @@
+# Optional: 3-node practice cluster using kind (Kubernetes IN Docker).
+# This lab was executed on minikube; kind is an equivalent alternative.
+#   kind create cluster --config setup/kind-config.yaml
+#   kind load docker-image batch-app:1.0     # instead of "minikube image load"
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+- role: worker
+- role: worker

@@ -1,0 +1,17 @@
+# Experiment 3: deliberately failing Job to observe retry behaviour.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: report-fail-job
+spec:
+  backoffLimit: 3                  # 1 initial attempt + 3 retries = 4 pods
+  template:
+    spec:
+      containers:
+      - name: report
+        image: batch-app:1.0
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: FAIL
+          value: "true"            # makes app.py exit with status 1
+      restartPolicy: Never
