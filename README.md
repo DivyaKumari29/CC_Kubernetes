@@ -20,15 +20,14 @@
 10. [Results and Observations](#10-results-and-observations)
 11. [Conclusion](#11-conclusion)
 12. [Learning Outcomes](#12-learning-outcomes)
-13. [Viva Questions](#13-viva-questions)
-14. [References](#14-references)
+
 
 **Detailed documents:**
 [1. Kubernetes Fundamentals](docs/01-kubernetes-fundamentals.md) ·
 [2. Jobs and CronJobs Theory](docs/02-jobs-and-cronjobs-theory.md) ·
 [3. Procedure](docs/03-procedure.md) ·
 [4. Observations and Results](docs/04-observations-and-results.md) ·
-[5. Viva Questions](docs/05-viva-questions.md)
+
 
 ---
 
@@ -215,18 +214,6 @@ The experiment showed that Kubernetes can manage run-to-completion and scheduled
 * Ability to write Job and CronJob manifests and tune completions, retries and schedules.
 * Ability to diagnose Pod and Job failures using logs and events.
 
-## 13. Viva Questions
-
-Twenty-four questions with model answers are given in [docs/05-viva-questions.md](docs/05-viva-questions.md).
-
-## 14. References
-
-1. Kubernetes Documentation: *Jobs*. https://kubernetes.io/docs/concepts/workloads/controllers/job/
-2. Kubernetes Documentation: *CronJob*. https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/
-3. Kubernetes Documentation: *Cluster Architecture*. https://kubernetes.io/docs/concepts/architecture/
-4. minikube Documentation. https://minikube.sigs.k8s.io/docs/
-5. kind Documentation. https://kind.sigs.k8s.io/
-6. Course deck: *Kubernetes: From Containers to a Working Cluster*.
 
 ---
 
