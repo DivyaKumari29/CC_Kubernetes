@@ -1,18 +1,8 @@
 # Jobs and CronJobs for Batch Workloads on Kubernetes
 
-**Cloud Computing Laboratory · Experiment 16**
+**Cloud Computing Laboratory ·**
 
 > Running a one-time batch task as a Kubernetes **Job** and a recurring task as a **CronJob**, and observing completion, retries and scheduling.
-
-| | |
-|---|---|
-| **Name** | *(your name)* |
-| **Roll No. / Reg. No.** | *(your roll number)* |
-| **Class / Section** | *(your class)* |
-| **Course** | Cloud Computing |
-| **Department** | *(your department)* |
-| **Instructor** | *(instructor name)* |
-| **Date of experiment** | 12 November 2026 |
 
 ---
 
